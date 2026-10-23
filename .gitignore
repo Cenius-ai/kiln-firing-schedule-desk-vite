@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Local database and generated secret
+backend/kiln.db
+backend/kiln.db-wal
+backend/kiln.db-shm
+backend/.jwt_secret
+*.db
+
+# Node
+node_modules/
+frontend/dist/
+
+# Environment
+.env
+.env.local
+
+# Editor / OS noise
+.DS_Store
