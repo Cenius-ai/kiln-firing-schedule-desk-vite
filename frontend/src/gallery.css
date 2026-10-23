@@ -1,0 +1,75 @@
+/* Component-level rules that sit on top of the committed token sheet.
+   No new tokens or colours here — everything reads from :root in styles.css. */
+
+.gallery-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s3);
+  padding: 10px 12px;
+  min-width: 0;
+}
+
+.gallery-foot .gf-name {
+  font-weight: 500;
+  font-size: 0.875rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.gallery-foot .gf-meta {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  text-align: right;
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .gallery-foot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .gallery-foot .gf-meta {
+    text-align: left;
+    white-space: normal;
+  }
+}
+
+/* The delete confirmation sits on the dark lightbox panel. */
+.lightbox .confirm-row {
+  border-color: var(--background);
+  color: var(--background);
+}
+
+.lightbox .confirm-row .btn-danger {
+  border-color: var(--destructive);
+  color: var(--background);
+  background: var(--destructive);
+}
+
+.lightbox .field-error {
+  color: #f3b6b4;
+}
+
+/* Calendar day link overlay keeps the whole cell clickable without nests. */
+.cal-cell > a[aria-label] {
+  text-decoration: none;
+}
+
+.cal-cell:focus-within {
+  box-shadow: inset 0 0 0 2px var(--ring);
+}
+
+.filter-bar .meta-line {
+  margin-left: auto;
+}
+
+@media (max-width: 640px) {
+  .filter-bar .meta-line {
+    margin-left: 0;
+  }
+}
