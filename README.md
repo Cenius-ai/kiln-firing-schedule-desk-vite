@@ -33,7 +33,7 @@ See [`INSTALL.md`](INSTALL.md) for full setup and usage instructions.
 
 ## Architecture
 
-The repository contains 109 files of Vite source, organised under `backend/`, `frontend/`. `install.sh` provisions dependencies and seeds demo data so the app starts with something real to explore. Full setup details: [`INSTALL.md`](INSTALL.md).
+The repository contains 96 files of Vite source, organised under `backend/`, `frontend/`. `install.sh` provisions dependencies and seeds demo data so the app starts with something real to explore. Full setup details: [`INSTALL.md`](INSTALL.md).
 
 ## Features
 
